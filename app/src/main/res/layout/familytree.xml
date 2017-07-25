@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageview5"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@+id/imageview1"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@+id/imageview1"
+            android:src="@drawable/icn_dashboard_student" />
+
+
+        <ImageView
+            android:id="@+id/imageview4"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@+id/imageview1"
+            android:layout_marginTop="80dp"
+            android:layout_toLeftOf="@+id/imageview1"
+            android:src="@drawable/icn_dashboard_teacher" />
+
+
+        <TextView
+            android:id="@+id/Own"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Mr.Sachin  \n Own" />
+
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="23dp"
+            android:layout_toLeftOf="@+id/imageview1"
+            android:layout_toStartOf="@+id/imageview1"
+            android:src="@drawable/icn_dashboard_superadmin" />
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_above="@+id/mother"
+            android:layout_toEndOf="@+id/imageview1"
+            android:layout_toRightOf="@+id/imageview1"
+            android:src="@drawable/icn_dashboard_supervisor" />
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_below="@+id/imageview3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100sp"
+            android:src="@drawable/icn_dashboard_admin" />
+
+        <TextView
+            android:id="@+id/Son"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/father"
+            android:layout_alignStart="@+id/father"
+            android:layout_below="@+id/imageview4"
+            android:gravity="center"
+            android:text="Anupam  \n Son" />
+
+        <TextView
+            android:id="@+id/father"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mother"
+            android:layout_alignBottom="@+id/mother"
+            android:layout_toLeftOf="@+id/imageview1"
+            android:layout_toStartOf="@+id/imageview1"
+            android:gravity="center"
+            android:text="Navin Bhai \n Father" />
+
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageview3"
+            android:layout_alignRight="@+id/imageview3"
+            android:layout_below="@+id/imageview2"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="Nailam Ben \n Mother" />
+
+        <TextView
+            android:id="@+id/wife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageview6"
+            android:layout_below="@+id/imageview6"
+            android:text="Ragini \n Wife"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/Sister"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:src="@drawable/sister"
+            android:layout_alignTop="@+id/father"
+            android:layout_toRightOf="@+id/imageview6"
+            android:layout_toEndOf="@+id/imageview6" />
+
+
+        <TextView
+            android:id="@+id/sis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kanika \n Sister"
+            android:layout_below="@+id/Sister"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/imageview6"
+            android:layout_toEndOf="@+id/imageview6" />
+
+        <TextView
+            android:id="@+id/Daughtor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Malaika  \n Daughter"
+            android:layout_below="@+id/imageview5"
+            android:layout_toRightOf="@+id/Own"
+            android:layout_toEndOf="@+id/Own" />
+
+        <ImageView
+            android:id="@+id/imageview6"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/rani"
+            android:layout_above="@+id/imageview4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</ScrollView>

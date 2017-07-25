@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="10sp"
+        android:background="@drawable/image_bg">
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/roundcoranr"
+             />
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:textSize="12dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/mobnumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uname"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+
+        android:textSize="10dip" />
+
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/emailadds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobnumber"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:gravity="right"
+        android:text="5:45"
+        android:textSize="9dip"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
